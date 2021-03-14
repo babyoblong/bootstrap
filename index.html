@@ -32,13 +32,7 @@
                         <a href="#" class="dropdown-item">American</a>
                     </div>
 
-
-
                 </li>
-
-
-
-
                 <li class="nav-item mr-2 d-block d-sm-none"><a href="/login" class="nav-link">Signin / Signup</a></li>
 
             </ul>
@@ -52,7 +46,7 @@
         <div class="row d-none d-sm-block">
             <div class="col-12">
                 <div class="alert alert-warning"><strong>Sale Now On!</strong> We've got a sale on. Get a 12-month
-                    subscriptiong for the price of 6! <a href="">See Here!</a></div>
+                    subscription for the price of 6! <a href="">See Here!</a></div>
             </div>
         </div>
         <!-- Callout -->
@@ -63,7 +57,8 @@
                     <p class="lead">Sign up today to start receiving the world's best whiskeys every month. <s
                             class="d-none d-sm-inline">€19.99</s>
                         <span class="d-inline d-sm-none"><br></span><strong><mark>First one is free!</mark></strong></p>
-                    <p><button class="btn btn-lg btn-success">Sign Up!</button></p>
+                    <p><button class="btn btn-lg btn-success" data-toggle="modal" data-target="#signupModal">Sign
+                            Up!</button></p>
                     <p class="text-muted"><small>You must be over 18 to sign up to our service. Please drink
                             responsibly.</small></p>
                 </section>
@@ -187,6 +182,43 @@
             </table>
         </section>
     </article>
+
+    <div class="modal" tabindex="-1" role="dialog" id="signupModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sign Up To Whiskey Drop</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email" required>
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password"
+                                placeholder="Password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="repeatPassword">Password</label>
+                            <input type="password" class="form-control" id="repeatPassword"
+                                placeholder="Repeat Password" required>
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+
+                </div>
+               
+            </div>
+        </div>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
